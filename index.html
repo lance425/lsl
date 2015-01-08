@@ -33,42 +33,38 @@
 <body>
 
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top">Lance S. Littlefield</a>
-            </li>
-            <li>
-                <a href="#top">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#services">Services</a>
-            </li>
-            <li>
-                <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
+
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img class="logo" src="img/logo.png">
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
     </nav>
 
     <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center header-text">
-            <h1>Lance S. Littlefield</h1>
-            <h3>Front-End Web Developer</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-sm">Find Out More</a>
+    
+    <header>
+        <div class="image">
+            <img src="img/transparent-ratio-conserver.png" class="responsive-image">
         </div>
     </header>
-
+    
     <!-- About -->
+    
     <section id="about" class="about">
         <div class="container">
             <div class="row">
@@ -90,106 +86,11 @@
         <!-- /.container -->
     </section>
 
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-services">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>The Things I Do</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>HTML</strong>
-                                </h4>
-                                <p>Intermediate</p>
-                                <p>I'm still having trouble writing clean code. It will come with practice.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>CSS</strong>
-                                </h4>
-                                <p>Intermediate</p>
-                                <p>There are many small things in CSS that make it hard to be "Advanced" I'll get there soon though.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Javascript</strong>
-                                </h4>
-                                <p>Basic</p>
-                                <p>I understand the basics, but I'm yet to really dive into Frameworks like Grunt or Ember</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>PHP</strong>
-                                </h4>
-                                <p>Basic</p>
-                                <p>One of the reasons I'm not learning Javascript quicker is because I stopped to learn this!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Callout -->
-    <aside id="portfolio" class="porfolio-header">
-        <div class="text-vertical-center-portfolio">
-            <h1>Porfolio</h1>
-        </div>
-    </aside>
-
-    <!-- Portfolio -->
-    <section  class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <div class="row">
-                        <div class="coming-soon">
-                            <p>Nothing to see here. Move along. </p>
-                            <p>I'm kidding of course. Things are on their way. So be sure to check back often!</p>
-                        </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
     <hr class="small">
 
     <!-- Footer -->
     <footer>
-        <section id="contact">
+        <section id="contact" class="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1 text-center">
@@ -199,23 +100,10 @@
                             <li><a href="mailto:lslittlefield@gmail.com"><i class="fa fa-envelope-o footer-style"></i><p>LSLittlefield@gmail.com</p></a></li>
                             <li><a href="https://twitter.com/ls_littlefield"><i class="fa fa-twitter footer-style"></i><p>@LS_Littlefield</p></a></li>
                         </ul>
-                        <hr class="small">
                     </div>
                 </div>
             </div>
         </section>
-    
-
-        <!-- Map -->
-        <section id="contact" class="map">
-            </iframe><iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27515.767641468225!2d-91.1277239!3d30.451095999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1408055463051"></iframe>
-            <br />
-            <small>
-                <a href="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27515.767641468225!2d-91.1277239!3d30.451095999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1408055463051"></a>
-            </small>
-            </iframe>
-        </section>
-        
     </footer>
         
 
