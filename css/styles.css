@@ -1,4 +1,4 @@
-/* Global Styles */
+/******Global Styles******/
 
 html,
 body {
@@ -8,53 +8,27 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,sans-serif;
 }
 
-
-/* Custom Button Styles */
-
-.btn-dark {
-    border-radius: 0;
-    color: #fff;
-    background-color: rgba(0,0,0,0.4);
+a {
+    color: #2C3E50;
 }
-
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-    color: #fff;
-    background-color: rgba(0,0,0,0.7);
-}
-
-.btn-light {
-    border-radius: 0;
-    color: #333;
-    background-color: rgb(255,255,255);
-}
-
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
-    color: #333;
-    background-color: rgba(255,255,255,0.8);
-}
-
-/* Custom Horizontal Rule */
+/******Custom Horizontal Rule******/
 
 hr.small {
-    max-width: 100px;
+    max-width: 400px;
 }
 
-/*Navbar*/
+/******Navbar******/
 
 .logo {
-    width: 90px;
-    padding: 10px 0;
+    width: 100px;
+    padding: 15.5px 0;
 }
 
 ul.nav.navbar-nav{
-    padding: 20px;
+    padding: 23.5px 20px;
 }
 
 .navbar {
@@ -66,7 +40,7 @@ ul.nav.navbar-nav{
 }
 
 
-/* Header */
+/******Header******/
 
 header h1 h3 {
     color: #474344;
@@ -77,7 +51,85 @@ header h1 h3 {
     padding: 10px 0;
 }
 
-/* Footer */
+
+
+/******INTEREST******/
+
+.interest {
+    padding: 60px 0;
+    color: #F5F7FA;
+}
+
+h2.interest-style {
+    color: #F5F7FA;
+    font-size: 40px;
+    margin: 60px 0 0 0;
+}
+
+.interest-making-sports {
+    width: 120px;
+}
+
+.interest-travel-games {
+    width: 150px;
+}
+
+.interest-books {
+    width: 100px;
+}
+
+.interest-making-sports,
+.interest-travel-games,
+.interest-books {
+    padding: 25px 25px;
+    background: #F5F7FA;
+    border-radius: 20px;
+}
+
+.interest-bg {
+    background: #656D78;
+}
+
+
+/******Modals******/
+
+
+.modal-dialog {
+    margin: 15% auto;
+}
+
+.modal-content {
+    background: #F5F7FA;
+}
+
+/******Contact******/
+
+
+.well {
+    border: none;
+    background: #F5F7FA;
+}
+
+
+/******Custom Buttons******/
+
+.btn {
+  border: none;
+  box-shadow: none;
+  border-radius: .09em;
+  font-size: 2.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #555;
+  padding: .6em 2.2em;
+  cursor: pointer;
+  background: #e7e7e7;
+}
+
+.contact-bg {
+    margin: 125px 0 150px;
+}
+
+/******Footer******/
 
 footer {
     font-size: 16px;
@@ -89,32 +141,76 @@ footer p {
     padding-left: 10px;
 }
 
+footer li {
+    margin: 10px;
+}
+
 .footer-style {
     font-size: 1.5em;
 }
 
-footer h2 {
-    padding-bottom: 15px;
-    font-size: 40px;
-    font-weight: 700;
+.copyright {
+    margin: 100px;
 }
 
-.copyright p {
-    font-size: .8em;
+.copyright {
+    font-size: 1em;
+    color: #F5F7FA;
 }
 
-/*Media Queries*/
+.copyright-bg {
+    background: #656D78;
+}
+
+
+
+/*TEST CRAP*/
+
+
+.modal {
+    background: ;
+
+}
+
+
+/******Media Queries******/
 
 
 .responsive-image{
     width: 100%;
     background-size: 100% 100%;
 }
+
+
+
+
+@media screen and (max-width: 1024px){
+    .interest-making-sports {
+        width: 90px;
+    }
+
+    .interest-travel-games {
+        width: 120px;
+    }
+
+    .interest-books {
+        width: 80px;
+    }
+
+    .interest-making-sports,
+    .interest-travel-games,
+    .interest-books {
+        padding: 15px 15px;
+        margin: 25px 0;
+    }
+}
+
 /* Retina display */
 @media screen and (min-width: 1024px){
     .responsive-image{
         background-image: url('../img/retina.jpg');
     }
+
 }
 /* Desktop */
 @media screen and (min-width: 980px) and (max-width: 1024px){
@@ -128,6 +224,10 @@ footer h2 {
         background-image: url('../img/tablet.jpg');
     }
 }
+
+@media screen and (max-width: 760px){
+
+
 /* Mobile HD */
 @media screen and (min-width: 350px) and (max-width: 760px){
     .responsive-image{
